@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Parts || Component Of The Scenes
+{% endblock title %}
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/parts.css' %}">
+
+{% endblock head %}
+
+{% block body %}
+
+
+<section>
+
+    <div class="container d-flex justify-content-center mt-4 flex-column">
+        <h1 class="fw-bolder opacity-75 text-center">The Parts We Are Using</h1>
+        <p class="opacity-75 text-center mt-3" style="text-align:justify;">For the setisfection are telling you about
+            what parts we have used to create <b>Bluetooth
+                & Voice Control Car. </b>Kindely we have provided all part's images and some details about them that
+            could
+            help you to understand what we are using in the Car.</p>
+    </div>
+
+</section>
+
+
+<section>
+    <div class="parts mt-3">
+        <div class="contain">
+
+            {% for part in parts %}
+            <div class="card" style="--clr:#009688;">
+                <div class="imgBx">
+                    <img src="{{ part.img.url }}" alt="img" height="100%">
+                </div>
+                <div class="content">
+                    <h2>{{ part.title }}</h2>
+                    <p>{{ part.content|slice:"0:165"}}...</p>
+                    <a href="{{ part.link }}" >Read more...</a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Contact Us
+{% endblock title %}
+
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock head %}
+
+{% block body %}
+
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="{% static 'images/logo.png' %}" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <h3 class="opacity-50 fw-bolder ">Contact Us</h3>
+                    <form class="row g-3 p-3 fs-6 mt-1" method="post">
+                        {% csrf_token %}
+                        <div class="inp">
+                            <input type="name" class="form-control shadow-none" id="name" name="name" placeholder="Full Name"
+                                required>
+                        </div>
+                        <div class=" inp">
+                            <input type="email" class="form-control shadow-none" id="email" name="email"
+                                placeholder="Email" required>
+                        </div>
+
+                        <div class="inp">
+                            <input type="number" class="form-control shadow-none" id="contact" name="contact"
+                                placeholder="Number" required>
+                        </div>
+
+                        <div class="col-md-12 inp">
+                            <div class="form-floating inp">
+                                <textarea class="form-control shadow-none" placeholder="Leave a comment here" id="topic"
+                                    style="height: 15vh" name="topic" required></textarea>
+                                <label class="opacity-75" for="require">Topic</label>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <button type="submit" class="btn rounded-5">Send <i class="fa-sharp fa-solid fa-paper-plane fa-bounce"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var FeedbackForm = document.getElementById("Feedback");
+    var ContactForm = document.getElementById("Contact");
+    var indicator = document.getElementById("indicator");
+
+    function register() {
+        RegForm.style.transform = "translateX(0px)";
+        loginForm.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+    }
+    function login() {
+        RegForm.style.transform = "translateX(300px)";
+        loginForm.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+
+{% endblock body %}

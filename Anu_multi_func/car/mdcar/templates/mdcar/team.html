@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Team || Members
+{% endblock title %}
+
+
+{% block head %}
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="{% static 'css/team.css' %}">
+
+{% endblock head %}
+
+
+
+{% block body %}
+
+<section>
+
+    <div class="container">
+
+        <h1 class="fw-bolder text-center opacity-50" style="font-size: 3rem;">Our Team !</h1>
+
+        <div class="row d-flex flex-row justify-content-center mt-4">
+
+            <!-- Anurag Profile -->
+            <div class="wrapper col-sm-3 m-3">
+                <div class="card front-face">
+                    <img src="{% static '/images/profile/Anu.jpg' %}">
+                </div>
+                <div class="card back-face">
+                    <img src="{% static '/images/profile/Anu.jpg' %}">
+                    <div class="info">
+                        <div class="title">
+                            Anurag Mishra
+                        </div>
+                        <p>
+                            I am a software developer. <br> Expert in <b>Advance JAVA</b>
+                        </p>
+                    </div>
+                    <ul>
+                        <a href="https://github.com/anurag4002" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/AnuragM59061494?t=kzwQt7mJTHIRqpRBYmamPQ&s=09" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/the_anurag_01?igshid=NGExMmI2YTkyZg==" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anurag-mishra-9b1387224" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Arif Profile -->
+            <div class="wrapper col-sm-3 m-3">
+                <div class="card front-face">
+                    <img src="{% static '/images/profile/Arry.jpg' %}">
+                </div>
+                <div class="card back-face">
+                    <a href="https://arry-blog-eight.vercel.app/" target="_blank">
+                        <img src="{% static '/images/profile/Arry.jpg' %}">
+                    </a>
+                    <div class="info">
+                        <div class="title">
+                            Mohd Arif Ansari
+                        </div>
+                        <p>
+                            Full-Stack Web Developer <br> Expert in <b>Python with Django</b>
+                        </p>
+                    </div>
+                    <ul>
+                        <a href="https://github.com/arry043" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/APx_Arry03?t=t4OginwOOqV4GV_RzP056A&s=08" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/itz_arry03/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohd-arif-ansari-94233621b" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock body %}

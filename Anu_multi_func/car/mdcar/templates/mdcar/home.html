@@ -1,0 +1,492 @@
+<!-- importing header and footer from "base.html" -->
+{% extends "base.html" %}
+
+<!-- loading static files -->
+{% load static %}
+
+<!-- Title -->
+{% block title %} Multifunctional || CAR {% endblock title %} {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+{% endblock head %}
+
+<!-- Style -->
+{% block css %} {% endblock css %}
+<style></style>
+
+<!-- Body here -->
+{% block body %}
+
+<!-- Project Name with Project Image -->
+<section class="landing-page">
+  <div class="containerr">
+    <div class="starsPlaceholder"></div>
+    <!-- Background here -->
+    <div class="background">
+      <!-- Clouds here -->
+      <div class="cloudContainer">
+        <!-- Headline -->
+        <div class="text-center">
+          <h1
+            class="headline"
+            style="
+              font-size: 3rem;
+              font-weight: bolder;
+              opacity: 0.8;
+              letter-spacing: 0.2rem;
+            "
+            aria-label="BVC Car"
+          >
+            Multifunctional CAR
+          </h1>
+          <h4 class="subhead" role="presentation">
+            Impressive, Attractive and along with multiple features.
+          </h4>
+        </div>
+        <div class="clouds cloud1"></div>
+        <div class="clouds cloud3"></div>
+        <div class="clouds cloud4"></div>
+        <div class="clouds cloud5"></div>
+        <div class="clouds cloud6"></div>
+        <div class="clouds cloud7"></div>
+      </div>
+    </div>
+    <!-- Sun and Moon here -->
+    <div class="sunAndMoon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="120"
+        height="124"
+        viewBox="1259 92 120 124"
+      >
+        <ellipse
+          cx="1318.548"
+          cy="153.846098"
+          fill="#FFE66D"
+          fill-rule="evenodd"
+          rx="59.5480002"
+          ry="61.8460978"
+        />
+      </svg>
+    </div>
+    <!-- Hills -->
+    <div class="hills"></div>
+    <!-- Road here -->
+    <div class="road"></div>
+    <!-- Car here -->
+    <div class="jeep">
+      <svg
+        class="vehicleBody"
+        xmlns="http://www.w3.org/2000/svg"
+        width="475"
+        height="165"
+        viewbox="-1 -5 475 165"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs>
+          <path id="path-1" d="M0 137h26v9H0z"></path>
+          <mask id="mask-2" width="28" height="11" x="-1" y="-1">
+            <path fill="#fff" d="M-1 136h28v11H-1z"></path>
+            <use xlink:href="#path-1"></use>
+          </mask>
+          <path
+            id="path-3"
+            d="M45.0715585 128.803052l3.8264314-106.2970917S48.1457742-1.28153173 68.4183674.054221C88.6909605 1.38997375 260.984828.0253481 260.984828.0253481l42.568571 63.12153502 128.361431 14.32629 18.81527 47.2702989s18.793235-2.755085 18.793235 6.809451c0 9.564537.929253 21.810457-5.261711 21.810457-6.190963 0-19.312188-.429295-19.312188-.429295l-1.207344-27.408005-13.192648-22.159971h-69.124152l-33.484149 52.171858H171.313565l-.705554-15.446256-23.174323-34.765282H78.6402043L58.6198081 149.48529H25v-20.866211l20.0715585.183973z"
+          ></path>
+          <mask
+            id="mask-4"
+            width="452.572872"
+            height="163.537967"
+            x="-4"
+            y="-4"
+          >
+            <path fill="#fff" d="M21-4h452.572872v163.537967H21z"></path>
+            <use xlink:href="#path-3"></use>
+          </mask>
+          <path
+            id="path-5"
+            d="M122.109894 16.1384934l50.055416-.0726432v47.4669773H75L75.7410838 16z"
+          ></path>
+          <mask id="mask-6" width="107.16531" height="57.5328275" x="-5" y="-5">
+            <path fill="#fff" d="M70 11h107.16531v57.5328275H70z"></path>
+            <use xlink:href="#path-5"></use>
+          </mask>
+          <path
+            id="path-7"
+            d="M197 17h60.351096l14.231848 26.4460737-6.779018.1992818v20.804573l-67.596054-.6633642z"
+          ></path>
+          <mask
+            id="mask-8"
+            width="84.5829442"
+            height="57.4499285"
+            x="-5"
+            y="-5"
+          >
+            <path fill="#fff" d="M192 12h84.5829442v57.4499285H192z"></path>
+            <use xlink:href="#path-7"></use>
+          </mask>
+          <path
+            id="path-9"
+            d="M186 10.2620675h74.868375l28.165678 45.8905935v82.486369H205.03428s-17.87286 3.981323-17.87286-66.1184175c0-70.09974063-1.16142-62.258545-1.16142-62.258545z"
+          ></path>
+          <mask
+            id="mask-10"
+            width="109.034053"
+            height="134.680455"
+            x="-3"
+            y="-3"
+          >
+            <path fill="#fff" d="M183 7h109.034053v134.680455H183z"></path>
+            <use xlink:href="#path-9"></use>
+          </mask>
+          <path
+            id="path-11"
+            d="M195 75l21.904052.2387363.47102 7.3750147h-22.312518z"
+          ></path>
+          <mask
+            id="mask-12"
+            width="24.375072"
+            height="9.61375096"
+            x="-1"
+            y="-1"
+          >
+            <path fill="#fff" d="M194 74h24.375072v9.61375096H194z"></path>
+            <use xlink:href="#path-11"></use>
+          </mask>
+        </defs>
+        <g id="vehicleBody" fill="none" fill-rule="evenodd">
+          <g id="Rectangle-4">
+            <use fill="#565656" xlink:href="#path-1"></use>
+            <use
+              stroke="#000"
+              stroke-width="2"
+              mask="url(#mask-2)"
+              xlink:href="#path-1"
+            ></use>
+          </g>
+          <g id="Path-3">
+            <use fill="#890000" xlink:href="#path-3"></use>
+            <use
+              stroke="#000"
+              stroke-width="8"
+              mask="url(#mask-4)"
+              xlink:href="#path-3"
+            ></use>
+          </g>
+          <g id="Path-4">
+            <use fill="#D8D8D8" xlink:href="#path-5"></use>
+            <use
+              stroke="#030303"
+              stroke-width="10"
+              mask="url(#mask-6)"
+              xlink:href="#path-5"
+            ></use>
+          </g>
+          <g id="Path-5">
+            <use fill="#D8D8D8" xlink:href="#path-7"></use>
+            <use
+              stroke="#030303"
+              stroke-width="10"
+              mask="url(#mask-8)"
+              xlink:href="#path-7"
+            ></use>
+          </g>
+          <path
+            id="Path-6"
+            fill="#000"
+            d="M46.4088849 53.2774657s-22.1529245-7.9266067-33.8538605.8744349C.8540885 62.9529423 5.30700672 147.991311 22.0174757 135.841991l22.5291548-9.032965 1.8622544-73.5315603z"
+          ></path>
+          <use
+            id="Path-7"
+            stroke="#000"
+            stroke-width="6"
+            mask="url(#mask-10)"
+            xlink:href="#path-9"
+          ></use>
+          <use
+            id="Path-8"
+            stroke="#000"
+            stroke-width="2"
+            mask="url(#mask-12)"
+            xlink:href="#path-11"
+          ></use>
+          <path
+            id="Path-9"
+            fill="#000"
+            d="M330 152.732957l9.501058.16776s17.961677-73.1984723 94.734741-34.376408l17.38742 32.121319L433.017922 103l-75.932648.451663L330 152.732957z"
+          ></path>
+          <path
+            id="Path-9-Copy"
+            fill="#000"
+            d="M49 152.732957l9.5010579.16776s17.9616773-73.1984723 94.7347411-34.376408l17.38742 32.121319L152.017922 103l-75.9326482.451663L49 152.732957z"
+          ></path>
+        </g></svg
+      ><img
+        class="backWheel"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/frontWheel.svg"
+        alt="wheel"
+      /><img
+        class="frontWheel"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/frontWheel.svg"
+        alt="wheel"
+      />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col-md-1">
+    <div style="position: absolute; top: 18rem; right: 15px; z-index: 1000; width: 320px; max-width: 90%; border-radius: 16px; overflow: hidden; background: rgba(255,255,255,0.03);">
+      <video
+        id="featureVideo"
+        autoplay
+        loop
+        muted
+        class="img2 img-fluid rounded-start-1"
+        style="width: 70%; height: auto; background-attachment: fixed; border-radius: 16px;"
+      >
+        <source src="{% static '/video/video.mp4' %}" type="video/mp4" />
+      </video>
+      <button
+        id="muteToggle"
+        type="button"
+        style="position: absolute; bottom: 1rem; right: 7rem; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 12px; padding: 4px 10px; cursor: pointer;"
+        onclick="const v=document.getElementById('featureVideo');v.muted=!v.muted;this.textContent=v.muted?'Unmute':'Mute';"
+      >Unmute</button>
+    </div>
+    <script>
+      // Set initial button text based on muted state
+      document.addEventListener('DOMContentLoaded', function() {
+        var v = document.getElementById('featureVideo');
+        var btn = document.getElementById('muteToggle');
+        btn.textContent = v.muted ? 'Unmute' : 'Mute';
+      });
+    </script>
+  </div>
+</section>
+
+<!-- Main features of the Project -->
+<section class="Features mt-5">
+  <!-- Bluetooth feature  -->
+  <div class="card border-0 view">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body mt-5 p-5">
+          <h2 class="card-title text-center fw-bolder opacity-75">
+            Bluetooth Controlling
+          </h2>
+          <h6 class="card-text text-center mt-4 fs-5 opacity-75">
+            In this Car we have embeded Blutooth Module by which we can control
+            the car using Bluetooth. We are implmenting Bluetooth version 5.0
+            which is the latest version of Bluetooth. Here we use Bluetooth
+            module that has a limitation of range. Will permit the client to
+            control the vehicle from anyplace in the required location. Will
+            permit the vehicle to be prepared, control or to advance without
+            anyone else so it turns out to be genuinely independent and can work
+            without human intercession of any sorts.
+          </h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img
+          src="{% static '/images/control.jpg' %}"
+          class="img2 img-fluid rounded-start-1"
+          style="
+            width: 57%;
+            background-attachment: fixed;
+            height: 80%;
+            margin-left: 10%;
+          "
+          alt="Bluetooth"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Voice Feature  -->
+  <div class="card mb-3 border-0 view">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body mt-1 p-5">
+          <h2 class="card-title text-center fw-bolder opacity-75">
+            Voice Controlling
+          </h2>
+          <h6 class="card-text text-center mt-4 fs-5 opacity-75">
+            We have implemented voice assistant to control the Car using voice
+            command. So, we are forwarding into new era with Powerfull
+            Technologies in modern way. The voice controlling feature in my
+            project, the "voice controlling car," allows you to control the
+            car's movements using your voice. Instead of using buttons or a
+            remote control, you can simply give commands like "forward,"
+            "backward," "turn left," or "turn right" and the car will respond
+            accordingly. This feature adds convenience and a hands-free
+            experience, making it easier to operate the car and have fun with
+            it.
+          </h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img
+          src="{% static '/images/voice.png' %}"
+          class="img2 img-fluid rounded-start-1"
+          style="background-attachment: fixed; margin-top: 15%"
+          alt="Bluetooth"
+          width="80%"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Obstrackel Detecting  -->
+  <div class="card mb-3 border-0 view">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body mt-3 p-5">
+          <h2 class="card-title text-center fw-bolder opacity-75">
+            Obstacles Detecting
+          </h2>
+          <h6 class="card-text text-center mt-4 fs-5 opacity-75">
+            An Arduino obstacle detector is a device that helps detect obstacles
+            in a simple and easy way. It uses sensors to identify objects in its
+            path and sends signals to the Arduino board. These signals are then
+            processed to trigger appropriate actions, such as stopping a robot
+            or activating an alarm. This technology is widely used in robotics
+            and automation to prevent collisions and improve safety.
+          </h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img
+          src="{% static '/images/sensor.jpg' %}"
+          class="img2 img-fluid rounded-start-1"
+          alt="Bluetooth"
+          width="80%"
+          style="height: 70%"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Elastic Feature -->
+<section class="mt-2 view">
+  <center>
+    <div class="container crsl">
+      <div class="group">
+        <div
+          class="item"
+          style="background-image: url('/static/images/elastic/img2.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('/static/images/elastic/img3.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('/static/images/elastic/img4.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('/static/images/elastic/img5.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('/static/images/elastic/img6.jpg')"
+        ></div>
+      </div>
+    </div>
+  </center>
+</section>
+
+<!-- Carausel start here  -->
+<section>
+  <div class="container view mt-4">
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- Carausel item1 -->
+        <div class="carousel-item active">
+          <div class="card d-flex flex-row border-0">
+            <div class="col-12">
+              <center>
+                <img
+                  src="{% static '/images/circuit .png' %}"
+                  class="d-block w-75"
+                  alt="..."
+                />
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carausel item2 -->
+        <div class="carousel-item">
+          <div class="card d-flex flex-row border-0">
+            <div class="col-12">
+              <center>
+                <img
+                  src="{% static '/images/im1.jpg' %}"
+                  class="d-block w-75"
+                  alt="..."
+                />
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carausel item3 -->
+        <div class="carousel-item">
+          <div class="card d-flex flex-row border-0">
+            <div class="col-12">
+              <center>
+                <img
+                  src="{% static '/images/im2.jpg' %}"
+                  class="d-block w-75"
+                  alt="..."
+                />
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carausel item4 -->
+        <div class="carousel-item">
+          <div class="card d-flex flex-row border-0">
+            <div class="col-12">
+              <center>
+                <img
+                  src="{% static '/images/img3.jpg' %}"
+                  class="d-block w-75"
+                  alt="..."
+                />
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carausel item5 -->
+        <div class="carousel-item">
+          <div class="card d-flex flex-row border-0">
+            <div class="col-12">
+              <center>
+                <img
+                  src="{% static '/images/img4.jpg' %}"
+                  class="d-block w-75"
+                  alt="..."
+                />
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Importing javascript library for elastic photos -->
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="{% static 'js/home.js' %}"></script>
+
+{% endblock body %}

@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Dark mode light mode */
+/* body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+  }
+ */
+
+/* Page Landing Animation */
+body {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* modifying sideBar */
+.nav-link {
+    position: relative;
+    color: #6c6b6b;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: #ffc107;
+    height: 3px;
+    width: 0;
+    border-radius: 1rem;
+    left: 0;
+    bottom: -.001rem;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: .3s;
+}
+
+
+/*  Footer CSS here */
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr 10rem auto;
+    grid-template-areas: "main" "." "footer";
+    overflow-x: hidden;
+    background: transparent;
+    min-height: 40vh;
+    font-family: 'Open Sans', sans-serif;
+
+    .footer {
+        z-index: 1;
+        --footer-background: #6c6b6b;
+        display: grid;
+        position: relative;
+        grid-area: footer;
+        min-height: 12rem;
+
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1rem;
+            background: var(--footer-background);
+            filter: url("#blob");
+
+            .bubble {
+                position: absolute;
+                left: var(--position, 50%);
+                background: var(--footer-background);
+                border-radius: 100%;
+                animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+                    bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+                transform: translate(-50%, 100%);
+            }
+        }
+
+        .content {
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-gap: 4rem;
+            padding: 2rem;
+            background: var(--footer-background);
+
+            a, p {
+                color: #F5F7FA;
+                text-decoration: none;
+            }
+
+            b {
+                color: white;
+            }
+
+            p {
+                margin: 0;
+                font-size: .75rem;
+            }
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                >div {
+                    margin: 0.25rem 0;
+
+                    >* {
+                        margin-right: .5rem;
+                    }
+                }
+
+                .image {
+                    align-self: center;
+                    width: 4rem;
+                    height: 4rem;
+                    margin: 0.25rem 0;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bubble-size {
+
+    0%,
+    75% {
+        width: var(--size, 4rem);
+        height: var(--size, 4rem);
+    }
+
+    100% {
+        width: 0rem;
+        height: 0rem;
+    }
+}
+
+@keyframes bubble-move {
+    0% {
+        bottom: -4rem;
+    }
+
+    100% {
+        bottom: var(--distance, 10rem);
+    }
+}
+
+/* Content Load Animation */
+
+.view {
+    opacity: 0;
+    transform: translateY(30vh);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.view.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.view.anim {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media screen and (max-width:765px) {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* icons hover property */
+.icon i {
+    color: #fff;
+    transition: .2s;
+}
+
+.facebook:hover i {
+    transform: translateY(-10px);
+    color: #1877f2;
+}
+
+.instagram:hover i {
+    transform: translateY(-10px);
+    border-radius: 10px;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.twitter:hover i {
+    transform: translateY(-10px);
+    color: #1DA1F2;
+}
+
+.linkdin:hover i {
+    transform: translateY(-10px);
+    color: #0077B5;
+}
+
+.github:hover i {
+    transform: translateY(-10px);
+    color: #181717;
+}
+
+.youtube:hover i {
+    transform: translateY(-10px);
+    color: #FF0000;
+}
