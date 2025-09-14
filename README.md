@@ -2,7 +2,7 @@
 
 Welcome to the **IoT Multifunctional Car** project! 🌟 This is an Arduino-based smart car that can be controlled via a mobile GUI for remote navigation, obstacle detection, and automation.
 
----
+---------------------------------------------------
 
 ## 🚀 Features
 
