@@ -2,7 +2,7 @@
 
 Welcome to the **IoT Multifunctional Car** project! 🌟 This is an Arduino-based smart car that can be controlled via a mobile GUI for remote navigation, obstacle detection, and automation.
 
---
+-------------
 
 ## 🚀 Features
 
@@ -12,7 +12,7 @@ Welcome to the **IoT Multifunctional Car** project! 🌟 This is an Arduino-base
 ✅ **Embedded Systems & IoT** – Combines hardware and software to demonstrate real-time data processing and control.  
 ✅ **Dedicated Website Dashboard** – Monitor and manage the car’s functionalities online for better user experience.
 
-------
+------------
 
 ## 🛠️ Technologies Used
 
@@ -21,7 +21,7 @@ Welcome to the **IoT Multifunctional Car** project! 🌟 This is an Arduino-base
 - **Web Dashboard**: Built with modern web technologies for monitoring and data visualization  
 - **IoT Concepts**: Remote control, data tracking, and automation
 
----
+---------
 
 
 ## 📥 How to Run
